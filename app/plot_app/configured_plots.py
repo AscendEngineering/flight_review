@@ -952,7 +952,6 @@ def generate_plots(ulog, px4_ulog, db_data, vehicle_data, link_to_3d_page,
     except (KeyError, IndexError) as error:
         print('Error in failsafe plot: '+str(error))
 
-
     # cpu load
     data_plot = DataPlot(data, plot_config, 'cpuload',
                          title='CPU & RAM', plot_height='small', y_range=Range1d(0, 1),
